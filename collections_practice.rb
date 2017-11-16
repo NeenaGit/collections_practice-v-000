@@ -22,7 +22,8 @@ end
 def kesha_maker(array)
   money_signed = [ ]
   array.each do | word |
-     money_signed << (word[2] = "$")
+     (word[2] = "$")
+     money_signed << word
   end
   money_signed
 end
