@@ -37,5 +37,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-array.collect_with_index { | word , i| word << 's', index[-1]}
+array.collect_with_index { | word , index | word << 's' if index != 1 }
 end
