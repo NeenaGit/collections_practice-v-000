@@ -21,8 +21,8 @@ end
 
 def kesha_maker(array)
   money_signed = [ ]
-  array.each_with_index do | word, index|
-     money_signed << word = "$", index = 2
+  array.each_with_index do | word, index |
+     money_signed << (word[2] = "$", index = 2)
   end
   money_signed
 end
